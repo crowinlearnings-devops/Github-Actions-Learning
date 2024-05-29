@@ -12,3 +12,7 @@ Steps:
 -   Must execute a shell script or action(must have one step in job)
 -   Can be conditional
 -   Steps are executed in order
+
+Jobs are running in two types:
+    -   parallel (default behaviour)
+    -   sequential

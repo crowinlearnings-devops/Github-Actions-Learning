@@ -14,6 +14,7 @@ jobs:
           echo "First Line"
           echo "Second Line"
   second-job:
+    needs: first-job # Makes the job run in sequential order
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout the code"
@@ -29,4 +30,10 @@ jobs:
 
       - name: Run tests
         run: npm test
+  third-job:
+    needs: second-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Output the values"
+        run: "${{toJson(github)}}"
       
