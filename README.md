@@ -15,4 +15,7 @@ Steps:
 
 Jobs are running in two types:
     -   parallel (default behaviour)
-    -   sequential
+    -   sequential (needs keyword required)
+
+How to skip the workflow ?
+By adding [skip ci], [skip action] in the commit message

@@ -2,6 +2,11 @@ name: First-Workflow
 on: 
   - workflow_dispatch
   - push
+# Activity
+# on: 
+#   pull_request:
+#      types: [opened,closed]
+#   workflow_dispatch
 jobs:
   first-job:
     runs-on: ubuntu-latest
@@ -35,5 +40,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Output the values"
-        run: "${{toJson(github)}}"
+        run: echo "${{ toJson(github) }}"
       
