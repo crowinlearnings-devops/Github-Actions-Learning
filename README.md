@@ -19,3 +19,9 @@ Jobs are running in two types:
 
 How to skip the workflow ?
 By adding [skip ci], [skip action] in the commit message
+
+Service Containers ?
+
+How to call one workflow from another workflow ? workflow_call
+
+how to add inputs and outputs in nested workflow ?
